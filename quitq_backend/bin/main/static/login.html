@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>QuitQ Login</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="logo">
+<h1>QuitQ</h1>
+<p>E-Commerce</p>
+</div>
+
+<form class="form-box" onsubmit="return validateLogin()">
+
+<h2>Login</h2>
+
+<p id="loginError" class="form-error"></p>
+
+<label>Email / Username</label>
+<input type="text" id="loginEmail" placeholder="Enter email">
+
+<label>Password</label>
+<input type="password" id="loginPassword" placeholder="Enter password">
+
+<button type="submit" class="btn">Login</button>
+
+<p class="link">
+<a href="#">Forgot Password?</a>
+</p>
+
+<p class="link">
+Don't have an account?
+<a href="register.html">Register</a>
+</p>
+
+</form>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

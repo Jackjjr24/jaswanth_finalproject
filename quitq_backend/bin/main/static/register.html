@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>QuitQ Register</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="logo">
+<h1>QuitQ</h1>
+<p>Create Account</p>
+</div>
+
+<form class="form-box" onsubmit="return validateRegister()">
+
+<h2>Register</h2>
+
+<p id="registerError" class="form-error"></p>
+
+<label>Full Name</label>
+<input type="text" id="name" placeholder="Enter your name">
+
+<label>Email</label>
+<input type="text" id="email" placeholder="Enter email">
+
+<label>Password</label>
+<input type="password" id="password" placeholder="Create password">
+
+<label>Confirm Password</label>
+<input type="password" id="confirmPassword" placeholder="Confirm password">
+
+<button type="submit" class="btn">Register</button>
+
+<p class="link">
+Already have an account?
+<a href="login.html">Login</a>
+</p>
+
+</form>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
