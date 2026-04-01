@@ -1,0 +1,223 @@
+.user-management-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background: #f5f5f5;
+  min-height: 100vh;
+}
+
+.user-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.user-header h1 {
+  font-size: 36px;
+  color: #2c3e50;
+  margin: 0 0 10px 0;
+  font-weight: 600;
+}
+
+.user-header p {
+  font-size: 15px;
+  color: #7f8c8d;
+  margin: 0;
+}
+
+.user-filters {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.search-box {
+  flex: 1;
+  min-width: 250px;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #bdc3c7;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.search-box input:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.role-filter {
+  padding: 10px 12px;
+  border: 1px solid #bdc3c7;
+  border-radius: 4px;
+  font-size: 14px;
+  background: white;
+  cursor: pointer;
+}
+
+.role-filter:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.users-table-container {
+  background: white;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.users-table thead {
+  background: #34495e;
+  color: white;
+}
+
+.users-table th {
+  padding: 14px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.users-table tbody tr {
+  border-bottom: 1px solid #ecf0f1;
+}
+
+.users-table tbody tr:hover {
+  background-color: #f5f5f5;
+}
+
+.users-table td {
+  padding: 14px;
+  font-size: 14px;
+}
+
+.role-badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 3px;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+.role-badge.customer {
+  background: #e8f4f8;
+  color: #2980b9;
+}
+
+.role-badge.seller {
+  background: #f4e8f8;
+  color: #8e44ad;
+}
+
+.role-badge.admin {
+  background: #f8f4e8;
+  color: #d68910;
+}
+
+.delete-confirm {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.delete-confirm span {
+  font-size: 11px;
+  color: #c0392b;
+  white-space: nowrap;
+}
+
+.btn-delete,
+.btn-confirm,
+.btn-cancel {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  font-size: 11px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btn-delete {
+  background: #fadbd8;
+  color: #c0392b;
+  border: 1px solid #e74c3c;
+}
+
+.btn-delete:hover {
+  background: #e74c3c;
+  color: white;
+}
+
+.btn-confirm {
+  background: #e74c3c;
+  color: white;
+}
+
+.btn-confirm:hover {
+  background: #c0392b;
+}
+
+.btn-cancel {
+  background: #ecf0f1;
+  color: #2c3e50;
+}
+
+.btn-cancel:hover {
+  background: #bdc3c7;
+}
+
+.loading,
+.no-users {
+  text-align: center;
+  padding: 60px 20px;
+  background: white;
+  border-radius: 4px;
+  color: #7f8c8d;
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .user-management-container {
+    padding: 20px 15px;
+  }
+
+  .user-header h1 {
+    font-size: 28px;
+  }
+
+  .user-filters {
+    flex-direction: column;
+  }
+
+  .search-box {
+    min-width: 100%;
+  }
+
+  .role-filter {
+    width: 100%;
+  }
+
+  .users-table {
+    font-size: 12px;
+  }
+
+  .users-table th,
+  .users-table td {
+    padding: 10px;
+  }
+}

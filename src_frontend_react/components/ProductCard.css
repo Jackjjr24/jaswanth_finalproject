@@ -1,0 +1,72 @@
+.card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.image {
+  height: 200px;
+  background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+  border-radius: 8px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+  transition: all 0.3s ease;
+}
+
+.card:hover .image {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+}
+
+.card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--dark);
+  line-height: 1.4;
+}
+
+.price {
+  color: var(--secondary);
+  font-weight: 700;
+  font-size: 18px;
+  margin: 10px 0 15px 0;
+}
+
+.card > button {
+  background: linear-gradient(135deg, var(--secondary) 0%, #ff8533 100%);
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: auto;
+  transition: all 0.3s ease;
+}
+
+.card > button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(251, 100, 27, 0.3);
+}
+
+.card > button:active {
+  transform: translateY(0);
+}
